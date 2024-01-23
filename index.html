@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" crossorigin href="./assets/index-tHEZ6b5x.css">
+  </head>
+  <body>
+    <main id="main" class="h-[100vh] w-[100vw] bg-back text-slate-200 font-ubuntu">
+      <section class="grid w-full h-28 place-items-center">
+        <div class="px-10 py-4 rounded-full shadow-inner shadow-black bg-back">
+          <h3 class="text-3xl">
+            Hello!&nbsp;
+            <span
+              ><input
+                type="text"
+                placeholder="Write Your Name."
+                class="bg-transparent text-slate-200 focus:outline-none active:outline-none"
+            /></span>
+          </h3>
+        </div>
+      </section>
+
+      <section class="flex items-center justify-center w-full h-28 ">
+        <div class="px-12 py-5 rounded-full shadow-inner bg-back shadow-black">  
+          <input id="inputField" type="text" placeholder="Add new task" class="text-3xl bg-transparent focus:outline-none" />
+          <button class="text-3xl" id="AddButton">Go!</button>
+        </div>
+      </section>
+
+      <section class="todo-list">
+        <h3 class="py-10 text-4xl text-center font-ubuntu text-slate-200">TODO LIST</h3>
+        <div class="grid grid-cols-2 gap-10 px-10 list" id="todo-list">
+
+          <div class="item">
+            <div class="iteminner">
+              <input type="checkbox" class="ite" />
+              <p class="ite">Task 1</p>
+            </div>
+            <div class="iteminner">
+              <button class="ite delete">Delete</button>
+              <!-- <button class="ite edit">Edit</button> -->
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
